@@ -78,7 +78,44 @@
 <!-- Chart Peity JavaScript --> 
 <script src="{% static 'dist/plugins/peity/jquery.peity.min.js' %}"></script> 
 <script src="{% static 'dist/plugins/functions/jquery.peity.init.js' %}"></script>
+<script>
+  function addhtml(){
+    document.getElementById("video").innerHTML = 
+    <div class="col-lg-6 m-b-3">
+      <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="user-img pull-left"> <img src="dist/img/img1.jpg" class="img-circle img-responsive" alt="User Image"> </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="mail-contnet">
+              <h4 class="text-black m-b-0">Alexander Pierce</h4>
+              <small>Web Designer</small>
+              <p class="m-t-1">795 Crossover Lane, Folsom Ave, Suite 600,<br>
+                San Francisco, CA 94107</p>
+              <abbr title="Phone">P:</abbr> (123) 456-7890 </div>
+          </div>
+          <div class="mail-contnet">
+            <h4 class="text-black m-b-0">Alexander Pierce</h4>
+            <small>Web Designer</small>
+            <p class="m-t-1">795 Crossover Lane, Folsom Ave, Suite 600,<br>
+              San Francisco, CA 94107</p>
+            <abbr title="Phone">P:</abbr> (123) 456-7890 </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+  ;
 
+
+
+
+  }
+</script> 
 
 
 </body>
