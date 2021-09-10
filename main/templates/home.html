@@ -1,6 +1,6 @@
 {% load static %}
 <!-- Content Wrapper. Contains page content -->
- <div class="content-wrapper"> 
+<div class="content-wrapper"> 
     <!-- Content Header (Page header) -->
     <div class="content-header sty-one">
       <h1>Blank page</h1>
@@ -12,41 +12,50 @@
     
     <!-- Main content -->
     <div class="content">
-      <div class="row">
-                    <div class="col-12">
-                    <select class="form-select" aria-label="Default select example">
-  <option selected>Secteur</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
-<br><br>
-            <select class="form-select" aria-label="Default select example">
-  <option selected>S/secteur</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
-<br><br>
-            <select class="form-select" aria-label="Default select example">
-  <option selected>Site</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
-<br><br>
-            <select class="form-select" aria-label="Default select example">
-  <option selected>Caméra</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
-</select>
 
-                        <div class="card">
-                            
-                        </div>
-                    </div>
-                </div>
+      <div class="row" id = "video">
+          
+      </div>
+                    
     </div>
     <!-- /.content --> 
+</div>
+
+<script>
+  function addhtml(){
+    document.getElementById("video").innerHTML = 
+    <div class="col-lg-6 m-b-3">
+      <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="user-img pull-left"> <img src="dist/img/img1.jpg" class="img-circle img-responsive" alt="User Image"> </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="mail-contnet">
+              <h4 class="text-black m-b-0">Alexander Pierce</h4>
+              <small>Web Designer</small>
+              <p class="m-t-1">795 Crossover Lane, Folsom Ave, Suite 600,<br>
+                San Francisco, CA 94107</p>
+              <abbr title="Phone">P:</abbr> (123) 456-7890 </div>
+          </div>
+          <div class="mail-contnet">
+            <h4 class="text-black m-b-0">Alexander Pierce</h4>
+            <small>Web Designer</small>
+            <p class="m-t-1">795 Crossover Lane, Folsom Ave, Suite 600,<br>
+              San Francisco, CA 94107</p>
+            <abbr title="Phone">P:</abbr> (123) 456-7890 </div>
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
+    
+    
+  ;
+
+
+
+
+  }
+</script> 

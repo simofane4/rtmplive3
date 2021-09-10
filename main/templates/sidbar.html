@@ -17,16 +17,35 @@
             <li class="treeview"> <a href="#"> <i class="icon-home"></i> <span>{{secteur.name_sec}}</span> <span class="pull-right-container"> <i class="fa fa-angle-left pull-right"></i> </span> </a>
                 
                 <ul class="treeview-menu">
+
                     {% for sousecteur  in sousecteurs %}
                         {% if secteur.name_sec == sousecteur.secteur.name_sec  %}
-                        <li class="treeview"><a href="#"><i class="fa fa-angle-right"></i> {{sousecteur.name_s_sec}} </a></li>
-                        <ul class="treeview-menu">
-                            {% for site  in sites %}
-                                {% if sousecteur.name_s_sec == site.s_sec.name_s_sec %}
-                                <li class="treeview"><a href="#"><i class="fa fa-angle-right"></i> {{site.name_site}} </a></li>
-                                {% endif %}
-                            {% endfor %}
-                        </ul>
+                        <li class="treeview"><a href="#"><i class="fa fa-angle-right"></i> <span>{{sousecteur.name_s_sec}}</span>  <span class="pull-right-container"> </span> </a>
+                            <ul class="treeview-menu">
+                                {% for site  in sites %}
+                                    {% if sousecteur.name_s_sec == site.s_sec.name_s_sec %}
+                                        <li class="treeview"><a href="#"><i class="fa fa-angle-right"></i> {{site.name_site}} </a>
+                                        
+                                            <ul class="treeview-menu">
+                                                {% for camera  in cameras %}
+                                                    {% if site.name_site == camera.site.name_site %}
+                                                        <li class="treeview"><a  onClick="addhtml()" href="#"><i class="fa fa-angle-right"></i> {{camera.name}} </a>
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </li>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </ul>
+                                        
+                                        
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        
+                        </li>
                         {% endif %}
                     {% endfor %}
                 </ul>

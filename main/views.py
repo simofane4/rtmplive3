@@ -17,4 +17,5 @@ def home(request):
         'cameras':camera,
         
     }   
+    
     return render(request,'base.html',context)
