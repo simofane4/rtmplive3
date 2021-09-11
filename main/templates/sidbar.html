@@ -29,7 +29,7 @@
                                             <ul class="treeview-menu">
                                                 {% for camera  in cameras %}
                                                     {% if site.name_site == camera.site.name_site %}
-                                                        <li class="treeview"><a  onClick="addhtml()" href="#"><i class="fa fa-angle-right"></i> {{camera.name}} </a>
+                                                        <li class="treeview"><a   href= ' #' onClick="addelement('{{camera.name}}','{{camera.link}}')"   > <i class="fa fa-angle-right"></i> {{camera.name}} </a>
                                                         
                                                         
                                                         
