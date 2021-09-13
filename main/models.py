@@ -23,6 +23,7 @@ class Camera(models.Model):
     site = models.ForeignKey(Site,on_delete=models.CASCADE)
     name = models.CharField(max_length=250)
     link = models.CharField(max_length=250)
+    adress_ip = models.CharField(max_length=250)
     def __str__(self):
         return self.name  
 
